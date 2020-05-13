@@ -34,8 +34,7 @@ Route::get('/about', function () {
 */
 //using controllers to view the about.blade.php file and other blade.php files
 Route::get('/about','PagesController@about');
-
 Route::get('/services','PagesController@services');
-
-
+//to access the all the routes we create in post controller
+Route::resource('posts','PostsController');
 
